@@ -5,8 +5,8 @@ var num_things = 100;
 
 //////////////////////////////////////
 
-var w = 2000;
-var h = 1000;
+var w = 800;
+var h = 900;
 var div = 30;
 var sz = 4;
 var disp_w = 300;
@@ -26,14 +26,14 @@ var millisec;
 
 function setup() {
   print("strting...")
-  createCanvas(1500, 1000);
+  createCanvas(w, h);
   millisec = millis();
   // Create objects
   //for (var i=0; i<50; i++) {
   //  bugs.push(new Tree());
   //}
-  for (var x = 40; x < 1500; x+=(1500/30)){
-    for (var y = 40; y< 1000; y+=(1000/20)){
+  for (var x = 40; x < 1500; x+=(w/10)){
+    for (var y = 40; y< 1000; y+=(h/5)){
       trees.push(new Tree(x, y, random(40,20), random(8,12), random(1500,1000)));////x,y,startsize , number of steps, length
       trees[trees.length-1].populate();
     }

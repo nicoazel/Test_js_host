@@ -69,7 +69,7 @@ function sketchTest_04 ( sketch ) {
     sketch.draw = function() {
         sketch.background(sketch.map(sketch.mouseY,0,h,0,240));
         //sketch.background(0);
-        sketch.fill(255);
+        //sketch.fill(255);
         //sketch.rect(x,y,50,50);
         for (var i = 0; i<objs.length;i++){
           objs[i].display();

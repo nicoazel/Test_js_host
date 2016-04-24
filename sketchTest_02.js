@@ -22,7 +22,7 @@ function sketchTest_02 ( sketch ) {
     }
 
     sketch.draw = function() {
-        sketch.background(0);
+        sketch.background(sketch.map(mouseX,0,w,0,240));
         sketch.fill(255);
         //sketch.rect(x,y,50,50);
         for (var i = 0; i<objs.length;i++){
@@ -67,6 +67,7 @@ function sketchTest_04 ( sketch ) {
     }
 
     sketch.draw = function() {
+        sketch.background(sketch.map(mouseY,0,h,0,240));
         sketch.background(0);
         sketch.fill(255);
         //sketch.rect(x,y,50,50);

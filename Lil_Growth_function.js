@@ -5,8 +5,8 @@ var num_things = 100;
 
 //////////////////////////////////////
 
-var w = 900;
-var h = 400;
+var w = 600;
+var h = 600;
 var div = 30;
 var sz = 4;
 var disp_w = 300;
@@ -32,8 +32,8 @@ sketch.setup= function() {
   //for (var i=0; i<50; i++) {
   //  bugs.push(new Tree());
   //}
-  for (var x = 40; x < w; x+=(w/5)){
-    for (var y = 40; y< h; y+=(h/5)){
+  for (var x = 40; x < w; x+=(w/10)){
+    for (var y = 40; y< h; y+=(h/10)){
       trees.push(new Tree(x, y, sketch.random(40,20), sketch.random(8,12), sketch.random(w,h)));////x,y,startsize , number of steps, length
       trees[trees.length-1].populate();
     }

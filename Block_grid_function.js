@@ -7,9 +7,9 @@ var num_things = 100;
 
 //////////////////////////////////////
 
-var w = 900;
-var h = 400;
-var div = 30;
+var w = 600;
+var h = 600;
+var div = 20;
 var sz = 4;
 var disp_w = 300;
 var range = 250;

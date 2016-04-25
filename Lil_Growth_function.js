@@ -5,8 +5,8 @@ var num_things = 100;
 
 //////////////////////////////////////
 
-var w = 500;
-var h = 500;
+var w = 900;
+var h = 400;
 var div = 30;
 var sz = 4;
 var disp_w = 300;

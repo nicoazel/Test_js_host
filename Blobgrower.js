@@ -193,10 +193,10 @@ function Thing() {
 
         sketch.stroke(sketch.random(150,255),0,0,150);
         //point(this.poit.x,this.poit.y);
-        sketch.noStroke();
+        //sketch.noStroke();
         sketch.fill(100,101,50);
         //sketch.fill(sketch.random(100,140),1,1);
-        sketch.ellipse(this.poit.x,this.poit.y,4,4);
+        sketch.ellipse(this.poit.x,this.poit.y,2,2);
     }
 }
 

@@ -26,7 +26,7 @@ sketch.draw = function() {
             sketch.rect(x, y, sz, sz);
         }
                 else{
-          var col = sketch.map(y,0,w,0,240),sketch.map(x,0,h,0,240),sketch.map(sketch.mouseY,0,w,100,220);
+          var col = sketch.color(sketch.map(y,0,w,0,240),sketch.map(x,0,h,0,240),sketch.map(sketch.mouseY,0,w,100,220));
           sketch.fill(col);
           sketch.ellipse(x,y,sz*1.2,sz*1.2);
           if(sketch.dist(x,y,sketch.mouseX,sketch.mouseY)>100){

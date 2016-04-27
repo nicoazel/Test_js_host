@@ -25,10 +25,17 @@ sketch.draw = function() {
             sketch.fill(sketch.map(y,0,h,0,240), sketch.map(sketch.mouseX,0,w,100,200), sketch.map(sketch.mouseY,0,h,100,200));
             sketch.rect(x, y, sz, sz);
         }
-        else{
-          sketch.fill(sketch.map(y,0,w,0,240),sketch.map(x,0,h,0,240),sketch.map(sketch.mouseY,0,w,100,220));
+                else{
+          var col = sketch.map(y,0,w,0,240),sketch.map(x,0,h,0,240),sketch.map(sketch.mouseY,0,w,100,220);
+          sketch.fill(col);
           sketch.ellipse(x,y,sz*1.2,sz*1.2);
+          if(sketch.dist(x,y,sketch.mouseX,sketch.mouseY)>100){
+            sketch.stroke(col);
+            sketch.line(sketch.mouseX,sketch.mouseY,x,y);
         }
+        }
+
+
 
         //line(mouseX,mouseY,x,y);
       //print("running",x,"-",y);

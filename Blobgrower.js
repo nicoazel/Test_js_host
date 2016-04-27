@@ -23,15 +23,15 @@ sketch.setup = function() {
     sketch.frameRate(60);
     sketch.createCanvas(w, h);
     sketch.colorMode(sketch.HSB);
-    sketch.noStroke();
-    consumer = new Settler(250, sketch.mouseX, sketch.mouseY);
+    //sketch.noStroke();
+    //consumer = new Settler(250, sketch.mouseX, sketch.mouseY);
     //for (var x=disp_w; x<(w); x+=div){
-    for (var x=15; x<(w); x+=div){
-        for (var y=0; y<(h); y+=div){
-            cell = new Cells_objs(x,y,100,15);
-            cells.push(cell);
-        }
-    }
+    //for (var x=15; x<(w); x+=div){
+    //    for (var y=0; y<(h); y+=div){
+    //        cell = new Cells_objs(x,y,100,15);
+    //        cells.push(cell);
+    //    }
+    //}
     ///////////////////////////////
     for(var i = 0;i < num_things ;i++) {
         things.push(new Thing() );
@@ -45,7 +45,7 @@ sketch.setup = function() {
 sketch.draw = function() {
 
 
- 
+
 
     //////////////////////////////////////
     for(var i = 0;i < things.length;i++) {
@@ -193,7 +193,9 @@ function Thing() {
 
         sketch.stroke(sketch.random(150,255),0,0,150);
         //point(this.poit.x,this.poit.y);
-        sketch.rect(this.poit.x,this.poit.y,4,4);
+        sketch.noStroke();
+        sketch.fill(sketch.random(100,140),1,1);
+        sketch.ellipse(this.poit.x,this.poit.y,4,4);
     }
 }
 

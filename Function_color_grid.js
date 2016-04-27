@@ -1,8 +1,8 @@
 function ColorGrid (sketch){
 
-var w = 2000;
-var h = 1000;
-var div = 50;
+var w = 600;
+var h = 600;
+var div = 30;
 var sz = 15;
 sketch.setup = function() {
   //print("starting...");
